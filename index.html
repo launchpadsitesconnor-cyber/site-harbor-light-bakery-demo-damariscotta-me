@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Harbor Light Bakery (DEMO) | Damariscotta, ME</title><meta name="description" content="Small-batch bakery in Damariscotta, ME with sourdough, croissants, morning buns, and custom cakes. Open Tue-Sun 7am-2pm.">
+<meta name="theme-color" content="#9e2235">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant%20Garamond:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap">
+<style>:root{--bg:#fbf7f4;--ink:#2b1517;--muted:#6d5658;--accent:#9e2235;--accent-ink:#ffffff;--soft:#f0e1df;--card:#ffffff;--dark:#2b1517;--dark-ink:#f7ecea;--line:rgba(43,21,23,0.13);--head:'Cormorant Garamond',Georgia,serif;--body:'Jost',system-ui,sans-serif;--hw:600;--hls:0;--rc:4px;--rb:2px;--motif:repeating-radial-gradient(circle at 85% 15%, transparent 0 22px, rgba(158,34,53,0.1) 22px 23px);--motif-dark:repeating-radial-gradient(circle at 85% 15%, transparent 0 22px, rgba(255,255,255,0.07) 22px 23px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--head);font-weight:var(--hw);letter-spacing:var(--hls);line-height:1.07;margin:0 0 .45em}
+h1{font-size:clamp(2.3rem,5.6vw,4rem)}h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}h3{font-size:1.25rem}
+p{margin:0 0 1em}.lede{font-size:1.15rem;color:var(--muted);max-width:54ch}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;
+ font-weight:600;padding:13px 24px;border-radius:var(--rb);border:2px solid var(--accent);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px -10px var(--accent)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:600}
+.sec{padding:84px 0}.center{text-align:center}.narrow{max-width:720px;margin-left:auto;margin-right:auto}
+iframe.map{width:100%;height:360px;border:0;display:block;filter:saturate(.85)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--rc)}
+.hours-list{list-style:none;padding:0;margin:0}
+.hours-list li{display:flex;justify-content:space-between;gap:18px;padding:8px 0;border-bottom:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}.chips span{background:var(--card);border:1px solid var(--line);
+ padding:10px 18px;border-radius:999px;font-weight:600}
+.numbered{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 40px}
+.numbered li{display:flex;gap:18px;align-items:baseline;padding:18px 0;border-top:1px solid var(--line);font-size:1.1rem;font-weight:600}
+.numbered b{font-family:var(--head);color:var(--accent);font-size:1.3rem;min-width:2ch}
+.rules{list-style:none;padding:0;margin:0}.rules li{display:flex;justify-content:space-between;padding:20px 0;
+ border-top:1px solid var(--line);font-size:1.2rem;font-family:var(--head)}.rules li span{color:var(--accent)}
+.diamonds{list-style:none;padding:0;margin:0 auto;max-width:760px;columns:2;column-gap:48px}
+.diamonds li{break-inside:avoid;padding:10px 0 10px 26px;position:relative}
+.diamonds li::before{content:"";position:absolute;left:4px;top:19px;width:9px;height:9px;background:var(--accent);transform:rotate(45deg)}
+.tiles{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.tiles li{background:var(--card);border:1px solid var(--line);border-radius:var(--rc);padding:22px;font-weight:600;font-size:1.05rem}
+.tiles small{display:block;color:var(--accent);font-family:var(--head);font-size:.95rem;margin-bottom:10px}
+.callbar{display:none}
+footer.foot{padding:28px 0;font-size:.85rem;color:var(--muted)}
+@media(max-width:780px){.sec{padding:60px 0}.diamonds{columns:1}
+ .callbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;text-align:center;background:var(--accent);
+  color:var(--accent-ink);padding:15px;font-weight:700;text-decoration:none}body{padding-bottom:54px}}
+
+.j-head{border-bottom:1px solid var(--ink)}
+.j-topline{display:flex;justify-content:space-between;font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;padding-top:12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.j-topline a{text-decoration:none}
+.j-name{display:block;text-align:center;font:var(--hw) clamp(1.8rem,4vw,2.6rem) var(--head);text-decoration:none;padding:22px 0}
+.j-hero{padding:80px 0 56px}.j-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:end}
+.j-hero h1{font-size:clamp(2.4rem,6vw,4.6rem)}
+.j-photo{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--rc)}
+.j-band{height:14px;background:var(--motif),var(--accent);border-radius:var(--rc)}
+.dropcap::first-letter{float:left;font-family:var(--head);font-size:4.2em;line-height:.85;padding:6px 10px 0 0;color:var(--accent)}
+.j-grid h2{align-self:start}
+.j-contact{background:var(--accent);color:var(--accent-ink);padding:84px 0}.j-contact .hours-list li{border-color:rgba(255,255,255,.25)}
+.j-contact .j-grid{align-items:start}.big-phone{font:var(--hw) 2rem var(--head);text-decoration:none}
+@media(max-width:780px){.j-grid{grid-template-columns:1fr;gap:24px}.j-hero{padding:48px 0 36px}}</style></head><body>
+<header class="j-head"><div class="wrap j-topline"><span>Damariscotta, ME</span>
+<a href="tel:+12075550142">(207) 555-0142</a></div>
+<div class="wrap"><a class="j-name" href="#">Harbor Light Bakery (DEMO)</a></div></header>
+<section class="j-hero"><div class="wrap j-grid"><h1>Your morning starts here</h1>
+<div><div class="eyebrow" style="color:var(--accent)">Fresh bread. Early mornings.</div><p class="lede">We bake in small batches in Damariscotta, with sourdough, croissants, morning buns, and custom cakes coming out fresh for the day. Stop in Tuesday through Sunday from 7am to 2pm for something warm, flaky, or made for a celebration.</p><a class="btn" href="tel:+12075550142">Order now</a></div></div></section>
+<div class="wrap"><div class="j-band"></div></div>
+<section class="sec"><div class="wrap j-grid"><h2>Fresh from the oven</h2><p class="dropcap">Our cases are built around the kind of baking people come back for. Sourdough has a deep crust and a hearty crumb, croissants are light and buttery, and morning buns bring a little sweetness to breakfast. We also make custom cakes for birthdays, showers, and other moments worth marking. If you’re planning a stop in Damariscotta, come by early while the morning bake is still coming out.</p></div></section>
+<section class="sec" style="padding-top:0"><div class="wrap"><h2>Bakery favorites</h2><ul class="rules"><li>Sourdough<span aria-hidden='true'>→</span></li><li>Croissants<span aria-hidden='true'>→</span></li><li>Morning buns<span aria-hidden='true'>→</span></li><li>Custom cakes<span aria-hidden='true'>→</span></li></ul></div></section>
+
+<section class="j-contact" id="contact"><div class="wrap j-grid"><div><h2>Visit us</h2><div><a class="big-phone" href="tel:+12075550142">(207) 555-0142</a></div><div><a href="mailto:launchpadsitesconnor@gmail.com">launchpadsitesconnor@gmail.com</a></div><div><span>1 Main St, Damariscotta, ME 04543</span></div></div><div><h3>Hours</h3><ul class="hours-list"><li><span>Tuesday</span><span>7:00 AM - 2:00 PM</span></li><li><span>Wednesday</span><span>7:00 AM - 2:00 PM</span></li><li><span>Thursday</span><span>7:00 AM - 2:00 PM</span></li><li><span>Friday</span><span>7:00 AM - 2:00 PM</span></li><li><span>Saturday</span><span>7:00 AM - 2:00 PM</span></li><li><span>Sunday</span><span>7:00 AM - 1:00 PM</span></li></ul></div></div></section>
+<iframe class="map" loading="lazy" title="Map to Harbor Light Bakery (DEMO)" src="https://www.google.com/maps?q=Harbor%20Light%20Bakery%20%28DEMO%29%2C%201%20Main%20St%2C%20Damariscotta%2C%20ME%2004543&output=embed"></iframe><footer class="foot wrap">© 2026 Harbor Light Bakery (DEMO) · Damariscotta, ME</footer><a class="callbar" href="tel:+12075550142">Call (207) 555-0142</a></body></html>
